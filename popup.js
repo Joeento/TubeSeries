@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', function (data) {
     for (var i=0;i<tabs.length;i++) {
         chrome.tabs.executeScript(tabs[i].id,{
           file: 'scripts/playback.js'
-        },function(data) {console.log(data)});
+        },function(data) {
+          console.log(data)
+        });
     }
   });
-
 });
